@@ -1,4 +1,5 @@
 name: 'sevenocean'
+
 type: theme
 core: 8.x
 base theme: classy
