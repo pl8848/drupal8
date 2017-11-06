@@ -1,11 +1,15 @@
 name: 'sevenocean'
 description: '模拟官网.'
 <<<<<<< HEAD
+<<<<<<< HEAD
 type: theme-1
 =======
 type: 'theme'
 type: theme
 >>>>>>> parent of 1f3e99e... 了
+=======
+type: theme
+>>>>>>> parent of e5d954a... 测试
 core: 8.x
 base theme: classy
 
