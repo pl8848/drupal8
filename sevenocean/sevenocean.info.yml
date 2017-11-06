@@ -1,0 +1,8 @@
+name: sevenocean
+description: 模拟官网.
+type: theme
+core: 8.x
+base theme: classy
+
+regions: 
+	header: HEADER
