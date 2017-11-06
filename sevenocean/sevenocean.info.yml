@@ -4,4 +4,3 @@ core: 8.x
 base theme: classy
 regions: 
 	header: HEADER
-    
