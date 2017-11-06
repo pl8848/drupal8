@@ -1,6 +1,6 @@
 name: 'sevenocean'
 description: '模拟官网.'
-type: theme
+type: theme-1
 core: 8.x
 base theme: classy
 
