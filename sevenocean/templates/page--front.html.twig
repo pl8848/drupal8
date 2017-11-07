@@ -1,160 +1,122 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!-- saved from url=(0021)http://sevenocean.cn/ -->
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<!--[if IE 6]>
-<script src="js/DD_belatedPNG.js"></script>
-<script> DD_belatedPNG.fix('.imenu_bg'); </script>
-<![endif]-->
+  <div class="head"> <!--head-->
+      <div class="top"><!--top-->
+            <div class="logo"><img src="{{ base_path }}theme/sevenocean/logo.jpg" width="172" alt="影像测量仪,影像仪,二次元测量仪"></div>
+            <div class="topnav">
+                  <ul>
+                    <li><a href="http://www.hexagonchina.com.cn/" target="_blank">海克斯康中国</a>|<a onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)">加入收藏</a></li>
+                    <li><a onclick="SetHome(window.location)" href="javascript:void(0)">设为首页</a></li>
+                    <li class="clbg"><a href="http://sevenocean.cn/en/" class="one">English</a></li>
+                  </ul>
+                  <img src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/rx.gif" alt="影像测量仪,二次元影像仪,七海影像测量仪">
+            </div> 
+      </div><!--top-->
+      <div class="blank20"></div>
+  </div><!--head-->
+ public function buildForm(array $form, array &$form_state) {
+    // Display login form:
+    $form['name'] = array(
+      '#type' => 'textfield',
+      '#title' => $this->t('Username'),
+      '#size' => 60,
+      '#maxlength' => USERNAME_MAX_LENGTH,
+      '#description' => $this->t('Enterrrrrrrrr your @s username.', array('@s' => $this->config('system.site')->get('name'))),
+      '#required' => TRUE,
+      '#attributes' => array(
+        'autocorrect' => 'off',
+        'autocapitalize' => 'off',
+        'spellcheck' => 'false',
+        'autofocus' => 'autofocus',
+      ),
+    );
 
-<title>影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网</title>
-<meta name="keywords" content="影像测量仪,影像仪,二次元测量仪,光学影像测量仪,专用影像测量仪,大行程影像测量仪,二次元影像测量仪">
-<meta name="description" content="七海测量是第一家进入中国内地生产影像测量仪的国际专业品牌。在影像测量仪技术方面取得了多项专利，一直以来在技术上领跑影像测量仪行业。主要产品有影像测量仪,全自动影像测量仪,专用影像测量仪等光学影像测量仪,是中国领先的影像测量仪供应商之一，不断带领中国影像测量仪行业屡创新高。">
-<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
-<link rel="stylesheet" type="text/css" href="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/style.css">
-<script charset="utf-8" src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/b.js.">
-</script><script charset="utf-8" src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/lxb.js
-"></script><script charset="utf-8" src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/v.js
-"></script><script type="text/javascript" src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/jquery.min.js
-"></script> 
-<script type="text/javascript" src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/navslide.js
-"> </script> 
-<script type="text/javascript" src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/jQuery-jcTabs.js
-"> 
-</script> 
-<script type="text/javascript">
-//<![CDATA[
-	   
-var currentindex=1;
-$("#flashBg").css("background-color",$("#flash1").attr("name"));
-function changeflash(i) {	
-currentindex=i;
-for (j=1;j<=3;j++){//此处的5代表你想要添加的幻灯片的数量与下面的5相呼应
-	if (j==i) 
-	{$("#flash"+j).fadeIn("normal");
-	$("#flash"+j).css("display","block");
-	$("#f"+j).removeClass();
-	$("#f"+j).addClass("dq");
-	$("#flashBg").css("background-color",$("#flash"+j).attr("name"));
-	}
-	else
-	{$("#flash"+j).css("display","none");
-	$("#f"+j).removeClass();
-	$("#f"+j).addClass("no");}
-}}
-function startAm(){
-timerID = setInterval("timer_tick()",8000);//8000代表间隔时间设置
-}
-function stopAm(){
-clearInterval(timerID);
-}
-function timer_tick() {
-    currentindex=currentindex>=3?1:currentindex+1;//此处的5代表幻灯片循环遍历的次数
-	changeflash(currentindex);}
-$(document).ready(function(){
-$(".flash_bar div").mouseover(function(){stopAm();}).mouseout(function(){startAm();});
-startAm();
-});
-$(function(){
-	$("#newstabs").jcTabs({Event:'mouseover'});
-	$("#protabs").jcTabs({
-                Event:'mouseover',
-		Default:1,
-		Scroll:true,
-		Direction:"x",
-		arrow:true,
-		arrowOffset:{
-			x : 0,
-			y : 80	
-		}});
+    $form['pass'] = array(
+      '#type' => 'password',
+      '#title' => $this->t('Password'),
+      '#size' => 60,
+      '#description' => $this->t('Enter the password that accompanies your username.'),
+      '#required' => TRUE,
+    );
 
-});
- //]]>
-</script>
-</head>
-<body>
-<div class="head"><!--head-->
-    <div class="top"><!--top-->
-          <div class="logo"><img src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/logo.jpg" width="172" alt="影像测量仪,影像仪,二次元测量仪"></div>
-          <div class="topnav">
-                <ul>
-                  <li><a href="http://www.hexagonchina.com.cn/" target="_blank">海克斯康中国</a>|<a onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)">加入收藏</a></li>
-                  <li><a onclick="SetHome(window.location)" href="javascript:void(0)">设为首页</a></li>
-                  <li class="clbg"><a href="http://sevenocean.cn/en/" class="one">English</a></li>
-                </ul>
-                <img src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/rx.gif" alt="影像测量仪,二次元影像仪,七海影像测量仪">
-          </div>
-    </div><!--top-->
-    <div class="blank20"></div>
-    </div><!--head-->
+    $form['actions'] = array('#type' => 'actions');
+    $form['actions']['submit'] = array('#type' => 'submit', '#value' => $this->t('Log in'));
+
+    $form['#validate'][] = array($this, 'validateName');
+    $form['#validate'][] = array($this, 'validateAuthentication');
+    $form['#validate'][] = array($this, 'validateFinal');
+
+
+    return $form;
+  }
+
 <script type="text/javascript" language="javascript">
- 
+
     //加入收藏
- 
+
         function AddFavorite(sURL, sTitle) {
- 
-            sURL = encodeURI(sURL); 
-        try{   
- 
-            window.external.addFavorite(sURL, sTitle);   
- 
-        }catch(e) {   
- 
-            try{   
- 
-                window.sidebar.addPanel(sTitle, sURL, "");   
- 
-            }catch (e) {   
- 
+
+            sURL = encodeURI(sURL);
+        try{
+
+            window.external.addFavorite(sURL, sTitle);
+
+        }catch(e) {
+
+            try{
+
+                window.sidebar.addPanel(sTitle, sURL, "");
+
+            }catch (e) {
+
                 alert("加入收藏失败，请使用Ctrl+D进行添加,或手动在浏览器里进行设置.");
- 
-            }   
- 
+
+            }
+
         }
- 
+
     }
- 
+
     //设为首页
- 
+
     function SetHome(url){
- 
+
         if (document.all) {
- 
+
             document.body.style.behavior='url(#default#homepage)';
- 
+
                document.body.setHomePage(url);
- 
+
         }else{
- 
+
             alert("您好,您的浏览器不支持自动设置页面为首页功能,请您手动在浏览器里设置该页面为首页!");
- 
+
         }
- 
+
     }
- 
+
 </script>
 
    <!--主导航代码开始-->
     <div id="menu_bg">
-      <div class="imenu_bg"> 
+      <div class="imenu_bg">
       	  <div class="imenu" topnav="nav5"><a href="http://sevenocean.cn/">网站首页</a></div>
           <div class="imenu" topnav="navgywm" attr="gywm"><a href="http://sevenocean.cn/html/000032.html">关于我们</a>
               <div class="submnu">
                   <div id="gywm">
                       <ul class="clearfix img-title">
-                                                                     <li><a href="http://sevenocean.cn/html/000032.html"><img alt="公司简介" src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/91f93d52cbeb70b712648ce1754da2bf.jpg"><strong title="公司简介">公司简介</strong></a></li>
+                                                                     <li><a href="http://sevenocean.cn/html/000032.html"><img alt="公司简介" src="{{ image }}/91f93d52cbeb70b712648ce1754da2bf.jpg"><strong title="公司简介">公司简介</strong></a></li>
                                                                       <li><a href="http://sevenocean.cn/html/000033.html"><img alt="联系我们" src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/ff8862177538248ce1d8424a69d9652f.jpg"><strong title="联系我们">联系我们</strong></a></li>
                                                                       <li><a href="http://sevenocean.cn/html/00005.html"><img alt="企业荣誉" src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/80a3179fc2558d720a07a9ee40bb8dac.jpg"><strong title="企业荣誉">企业荣誉</strong></a></li>
                                                                       <li><a href="http://sevenocean.cn/html/00007.html"><img alt="企业文化" src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/82cddbaef9a720893977da9589a59bc1.jpg"><strong title="企业文化">企业文化</strong></a></li>
                                                                       <li><a href="http://sevenocean.cn/html/00009.html"><img alt="视频宣传" src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/6bdb42587168fa37e4b93164614b9603.jpg"><strong title="视频宣传">视频宣传</strong></a></li>
                                                                       <li><a href="http://sevenocean.cn/html/00008.html"><img alt="七海展厅" src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/a596b32ac3ca9f124a0db32a20679a4c.jpg"><strong title="七海展厅">七海展厅</strong></a></li>
                                                                       <li><a href="http://sevenocean.cn/html/000010.html"><img alt="人才战略" src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/d1b074135a823aa6d174497c6ac3d2d5.jpg"><strong title="人才战略">人才战略</strong></a></li>
-                                
-                                <li><a href="http://sevenocean.cn/vip/job"><img alt="人才招聘" src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/2a71cdcfbb82bfe817586894d8815a43.jpg"><strong title="人才招聘">人才招聘 </strong></a></li>          
+
+                                <li><a href="http://sevenocean.cn/vip/job"><img alt="人才招聘" src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/2a71cdcfbb82bfe817586894d8815a43.jpg"><strong title="人才招聘">人才招聘 </strong></a></li>
                       </ul>
                   </div>
               </div>
          </div>
-           
+
           <div class="imenu" topnav="navzx" attr="zx"><a href="http://sevenocean.cn/news/">新闻中心</a>
             <div class="submnu">
               <div id="zx">
@@ -166,7 +128,7 @@ $(function(){
               </div>
             </div>
           </div>
-          
+
           <div class="imenu" topnav="navpf" attr="pf"><a href="http://sevenocean.cn/product/">产品展示</a>
             <div class="submnu">
               <div id="pf">
@@ -199,12 +161,12 @@ $(function(){
                                 <span> 龙门式影像测量仪，具有高精度、高稳定性，高效满足较大工件尺寸测量需求...</span>
                                  </div>
                              </li>
-                                                 
+
                     </ul>
               </div>
             </div>
           </div>
-          
+
           <div class="imenu" topnav="navhyyy" attr="hyyy"><a href="http://sevenocean.cn/application/">行业应用</a>
             <div class="submnu">
               <div id="hyyy">
@@ -221,35 +183,35 @@ $(function(){
                             <img alt="应用案例" src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/b7c650bc0714446cf49f60ad2f8ea5b8.jpg">
                             <p title="应用案例"> 七海测量提供最适合的测量系统相关资讯，为客户的疑...</p>
                           </a></li>
-                              
+
                       </ul>
               </div>
             </div>
           </div>
-          
+
           <div class="imenu" topnav="navyszx" attr="yszx"><a href="http://sevenocean.cn/demonstration/">演示中心</a>
             <div class="submnu">
               <div id="yszx" class="rate-border">
                		<ul class="clearfix img-title">
-                    
+
                           <!--li><a href="/demonstration/headoffice/">
                             <img alt="深圳总部" src="/d/file/201401/small7f5251feb3c8c14b31179550148d4b66.jpg" width="132px" height="72px">
                             <strong title="深圳总部">深圳总部</strong> </a></li-->
                                                                    <li><a href="http://sevenocean.cn/html/000025.html"><img alt="深圳" src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/5769ecc3490cf288d93736ebee246d9c.jpg" width="132px" height="72px"><strong title="深圳">深圳</strong></a></li>
-                          
-                         
+
+
                                                                <li><a href="http://sevenocean.cn/html/000046.html"><img alt="南京" src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/dab1cf1bc2ec0193e446077d00cc7a61.jpg" width="132px" height="72px"><strong title="南京">南京</strong></a></li>
                                                                <li><a href="http://sevenocean.cn/html/000045.html"><img alt="成都" src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/bb41491fbd0a28a7d337569a651ef294.jpg" width="132px" height="72px"><strong title="成都">成都</strong></a></li>
                                                                <li><a href="http://sevenocean.cn/html/000024.html"><img alt="苏州" src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/59c8cdb77e6ba872fab42c1d7b0f3dbe.jpg" width="132px" height="72px"><strong title="苏州">苏州</strong></a></li>
                                                                <li><a href="http://sevenocean.cn/html/000017.html"><img alt="上海" src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/51fdd8139dd3bad9febac6e5e7f8e988.jpg" width="132px" height="72px"><strong title="上海">上海</strong></a></li>
                                                                <li><a href="http://sevenocean.cn/html/000042.html"><img alt="台湾" src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/27a92e38242f8d4838c7a8714eba1fc1.jpg" width="132px" height="72px"><strong title="台湾">台湾</strong></a></li>
                                                                <li><a href="http://sevenocean.cn/html/0000156.html"><img alt="韩国" src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/c33b10165f2688361d2a125cc29d15d5.jpg" width="132px" height="72px"><strong title="韩国">韩国</strong></a></li>
-                          
+
                       </ul>
               </div>
             </div>
           </div>
-          
+
            <div class="imenu" topnav="navfw" attr="fw"><a href="http://sevenocean.cn/service/">服务支持</a>
             <div class="submnu submnu_r">
               <div id="fw" class="rate-border">
@@ -262,43 +224,43 @@ $(function(){
                             <img alt="技术知识" src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/0cc775cb26adfe650e68f55eb3c7d91c.jpg">
                             <p title="技术知识"> 七海测量产品中多项功能拥有世界多国专利；世界首创...</p>
                           </a></li>
-                              
+
                       </ul>
               </div>
             </div>
           </div>
-          
+
           <div class="imenu" topnav="navbbs"><a href="http://sevenocean.cn/bbs/" target="_blank">七海论坛</a></div>
-          
+
           <div class="imenu clbg" topnav="navcontact"><a href="http://sevenocean.cn/html/000033.html">联系我们</a></div>
-          
+
        </div>
     </div>
     <!--主导航代码结束-->
 <div class="banertop"></div><!--baner-->
 <div class="baner">
      <!--flash begin-->
-      <div id="flash"> 
-                         
+      <div id="flash">
+
           <a name="#e15517" style="display:block;background:url(&#39;/d/file/201604/e04a7544a0b225b0275943ba1cad934b.jpg&#39;) no-repeat center top;" id="flash1" target="_blank" href="http://sevenocean.cn/html/000032.html" title="全自动影像测量仪,光学影像测量仪"></a>
-                         
+
           <a name="#e15517" style="display:block;background:url(&#39;/d/file/201604/304c41a0115d95d2f638b2e67492eda4.jpg&#39;) no-repeat center top;" id="flash2" target="_blank" href="http://sevenocean.cn/product/" title="七海影像测量仪,光学测量领跑者"></a>
-                         
+
           <a name="#e15517" style="display:block;background:url(&#39;/d/file/201604/01a4d0d7c4325581f54c67a9f946e006.jpg&#39;) no-repeat center top;" id="flash3" target="_blank" href="http://sevenocean.cn/html/000033.html" title="七海测量,非接触高精测量仪器"></a>
                 </div>
-      <!--flash end--> 
+      <!--flash end-->
        <div class="flash_bar">
           <div class="dq" id="f1" onclick="changeflash(1)"></div>
           <div class="no" id="f2" onclick="changeflash(2)"></div>
           <div class="no" id="f3" onclick="changeflash(3)"></div>
-        </div>	 
+        </div>
 </div>
 <div class="banerft"></div><!--baner-->
 
 <div class="main"><!--main-->
 <div class="news"><!--news-->
-      <div id="newstabs" class="tabswrap">        
-       <ul id="tabsList" class="tabs"> 
+      <div id="newstabs" class="tabswrap">
+       <ul id="tabsList" class="tabs">
            <li>公司动态</li>
            <li>行业动态</li>
            <li>论坛精华</li>
@@ -324,7 +286,7 @@ $(function(){
                   </div>
               </div>
               <div class="item">
-              <div class="newcon"><a href="http://sevenocean.cn/bbs/"><img src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/bbs_1.jpg" width="296" alt="七海影像测量仪论坛,专业影像测量仪讨论区"></a></div>
+              <div class="newcon"><a href="http://sevenocean.cn/bbs/"><img src="{{ base_path }}theme/sevenocean/image/bbs_1.jpg" width="296" alt="七海影像测量仪论坛,专业影像测量仪讨论区"></a></div>
                   <div class="newcon">
                         <ul>
  <li><a href="http://sevenocean.cn/bbs/forum.php?mod=viewthread&amp;tid=79" target="_blank">影像测量仪和手机行业的发展</a> </li>
@@ -332,20 +294,20 @@ $(function(){
                         </ul>
                   </div>
               </div>
-          
-          
+
+
            </div>
        </div>
-   </div>   
+   </div>
 </div><!--news-->
 <div class="pro"><!--pro-->
        <div style="width:100%;height:19px;clear:both;"></div>
-	<div id="protabs" class="tabswrap">        
-       <ul id="tabsList" class="tabs"> 
+	<div id="protabs" class="tabswrap">
+       <ul id="tabsList" class="tabs">
            <li>手动影像测量仪</li>
            <li>自动影像测量仪</li>
            <li>专用影像测量仪</li>
-           <li>大行程影像测量仪</li> 
+           <li>大行程影像测量仪</li>
        </ul>
        <div id="wraper" class="tabsWraper">
            <div class="tabsCon" id="tabsCon">
@@ -353,28 +315,28 @@ $(function(){
                                          <div class="fimg" style="width:188px;"><img src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/a08046a05669260d8e87249c93250048.jpg" height="136" alt="手动影像测量仪,经济型影像仪"></div>
                       <div class="pcon"><h1><a href="http://sevenocean.cn/html/000067.html">Eagle专业型手动机</a></h1><a href="http://sevenocean.cn/html/000067.html">引进Hexagon集团先进的影像技术和制造工艺，专门面对国内用户量身度做的高性能专业型手动影像测量仪，强大的扩展功能，美观大方的外观，彩色CCD, 业界领先的EF系列测量软件，广泛应用于机械，电子，手机，模具及精密五金等行业的检测和设计开发应用。
 </a><br>
-                      <a class="fr" href="http://sevenocean.cn/html/000067.html">详情&gt;&gt;</a></div>                  
+                      <a class="fr" href="http://sevenocean.cn/html/000067.html">详情&gt;&gt;</a></div>
                                   </div>
                <div class="item">
                                          <div class="fimg" style="width:188px;"><img src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/e57da0375848418672a783f79075245c.jpg" height="136" alt="高精度影像测量仪,自动二次元影像仪"></div>
                       <div class="pcon"><h1><a href="http://sevenocean.cn/html/000068.html">Accura IA 影像测量仪</a></h1><a href="http://sevenocean.cn/html/000068.html">Accura IA 是七海测量推出的专为简便应用型的客户的经济型自动影像测量仪，可实现XYZ三轴CNC全自动测量，通过鼠标可实现各种几何测量，CNC编程，SPC报表功能等，是一款高性价比的自动仪器。</a><br>
-                      <a class="fr" href="http://sevenocean.cn/html/000068.html">详情&gt;&gt;</a></div>                  
+                      <a class="fr" href="http://sevenocean.cn/html/000068.html">详情&gt;&gt;</a></div>
                                   </div>
                <div class="item">
                                          <div class="fimg" style="width:188px;"><img src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/96ef80b74ee63918ba0bb68dbe9e831d.jpg" height="136" alt="专用影像测量仪,为您量身定做"></div>
                       <div class="pcon"><h1><a href="http://sevenocean.cn/html/000069.html">一键式测量仪</a></h1><a href="http://sevenocean.cn/html/000069.html">一键式测量机为高倍率远芯光路技术和超强软件功能的应用，保证了大视野，一键式测量；高精度，快速，不须治具；任意摆放皆可测量。
 </a><br>
-                      <a class="fr" href="http://sevenocean.cn/html/000069.html">详情&gt;&gt;</a></div>                  
+                      <a class="fr" href="http://sevenocean.cn/html/000069.html">详情&gt;&gt;</a></div>
                                   </div>
                <div class="item">
                                          <div class="fimg" style="width:188px;"><img src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/573b5d98af8b59be26df4dc3b2ce230b.jpg" height="136" alt="全自动影像测量仪,大行程影像测量仪"></div>
                       <div class="pcon"><h1><a href="http://sevenocean.cn/html/000012.html">Accura 8大行程影像测量仪</a></h1><a href="http://sevenocean.cn/html/000012.html">Accura 8系列是七海测量引进海克斯康先进的自动影像技术, 推出的高速，高精度，功能强大的专业级自动影像测量仪，是一款国内超高端应用的全自动影像仪器。
 </a><br>
-                      <a class="fr" href="http://sevenocean.cn/html/000012.html">详情&gt;&gt;</a></div>                  
+                      <a class="fr" href="http://sevenocean.cn/html/000012.html">详情&gt;&gt;</a></div>
                                   </div>
            </div>
        </div>
-   </div>      
+   </div>
 </div><!--pro-->
 </div><!--main-->
 <div class="server"><!--server-->
@@ -391,9 +353,9 @@ $(function(){
        <div class="scon"><!--scon-->
             <div class="stop"><a href="http://sevenocean.cn/html/00008.html"><img src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/more.jpg" width="33" alt="影像测量仪专业生产厂家-七海测量"></a><span>七海展厅</span></div>
             <div class="simg"><a href="http://sevenocean.cn/html/00008.html"><img src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/ser3.jpg" width="212" alt="七海影像测量仪展示,专业影像测量仪展厅"></a></div>
-            
+
                             <p><a href="http://sevenocean.cn/html/00008.html">七海测量展厅与培训 </a></p>
-                     
+
       </div><!--scon-->
        <div class="scon"><!--scon-->
             <div class="stop"><a href="http://sevenocean.cn/application/video/"><img src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/more.jpg" width="33" alt="影像测量仪测量视频与演示"></a><span>视频与演示</span></div>
@@ -414,21 +376,21 @@ $(function(){
          </div>
          <div class="blank10"></div>
           <div class="frlink">
-            深圳市宝安区福永街道和平社区和泰工业区和丰工业园第7栋 总机：+86-0755-33233111  传真：0755-33233111 转8220 
-<br>版权所有 © 七海测量技术（深圳）有限公司 粤ICP备14020534号
-          </div> 
+            深圳市宝安区福永街道和平社区和泰工业区和丰工业园第7栋 总机：+86-0755-33233111  传真：0755-33233111 转8220
+<br>版权所有 ? 七海测量技术（深圳）有限公司 粤ICP备14020534号
+          </div>
       </div><!--footcon-->
 
 <div style="display:none;">
-<script language="javascript" type="text/javascript" src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/16826510.js.下载"></script><a href="https://www.51.la/?16826510" target="_blank" title="51.La 网站流量统计系统">网站统计</a>
+<script language="javascript" type="text/javascript" src="js/16826510.js"></script><a href="https://www.51.la/?16826510" target="_blank" title="51.La 网站流量统计系统">网站统计</a>
 
 <script type="text/javascript">
 var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
 document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F72af2afd22405634c7013347c9c307ce' type='text/javascript'%3E%3C/script%3E"));
-</script><script src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/h.js.下载" type="text/javascript"></script><a href="http://tongji.baidu.com/hm-web/welcome/ico?s=72af2afd22405634c7013347c9c307ce" target="_blank"><img border="0" src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/21.gif" width="20" height="20"></a>
+</script><script src="js/h.js" type="text/javascript"></script><a href="http://tongji.baidu.com/hm-web/welcome/ico?s=72af2afd22405634c7013347c9c307ce" target="_blank"><img border="0" src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/21.gif" width="20" height="20"></a>
 
 </div>
-      <div class="link"> 
+      <div class="link">
                 <li><a href="http://www.hjunkel.com/" target="_blank">老化试验箱 </a></li>
                 <li><a href="http://www.jan1718.com/" target="_blank">激光测距仪 </a></li>
                 <li><a href="http://www.sevenocean.cn/" target="_blank">影像测量仪 </a></li>
@@ -491,4 +453,6 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
     <td><div align="left"></div></td>
   </tr>
 </tbody></table></div>
-<script id="ebsgovicon" src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/govicon.js.下载" type="text/javascript" charset="utf-8"></script><a href="http://szcert.ebs.org.cn/91869aec-2a3b-4872-a3fb-5c97da8d9c34" target="_blank"><img src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/govIcon.gif" title="深圳市市场监督管理局企业主体身份公示" alt="深圳市市场监督管理局企业主体身份公示" width="36" height="50" border="0" style="border-width:0px;border:hidden; border:none;"></a><script type="text/javascript" src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/iplookup.php"></script></div></body></html>
+<script id="ebsgovicon" src="js/govicon.js" type="text/javascript" charset="utf-8"></script><a href="http://szcert.ebs.org.cn/91869aec-2a3b-4872-a3fb-5c97da8d9c34" target="_blank"><img src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/govIcon.gif" title="深圳市市场监督管理局企业主体身份公示" alt="深圳市市场监督管理局企业主体身份公示" width="36" height="50" border="0" style="border-width:0px;border:hidden; border:none;"></a><script type="text/javascript" src="./影像测量仪,影像仪,二次元测量仪 - 七海影像测量仪器官网_files/iplookup.php">
+</script>
+</div>
