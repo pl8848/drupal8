@@ -324,12 +324,12 @@ font-family: Arial, "宋体";
 /*menu开始*/
 #menu_bg{ background:#2f2f2f repeat-x; height:39px;position:relative;z-index:1000;}
 #menu_bg .imenu_bg{width:1024px;margin:0 auto;position:relative;top:0;}
-.imenu{width:113px;height:39px;line-height:39px; text-align:center;background:url(../images/nav.jpg) no-repeat right;cursor:pointer;color:#FFF;float:left;}
+.imenu{width:113px;height:39px;line-height:39px; text-align:center;background:url(../image/nav.jpg) no-repeat right;cursor:pointer;color:#FFF;float:left;}
 .imenu a{ color:#FFF;text-decoration:none; }
 .imenu a:hover{ text-decoration:none;}
 .clbg{background:0}
 
-.imenu_on{width:113px;height:39px;background:url(../images/curr_bg.png) 0 0 repeat-x #fff;color:#000;cursor:pointer; float:left;line-height:39px; text-align:center;}
+.imenu_on{width:113px;height:39px;background:url(../image/curr_bg.png) 0 0 repeat-x #fff;color:#000;cursor:pointer; float:left;line-height:39px; text-align:center;}
 .imenu_on a{color:#000;text-decoration:none;}
 .imenu_on a:hover{text-decoration:underline; }
 

@@ -1,0 +1,426 @@
+锘�
+<body>
+<div class="head"><!--head-->
+    <div class="top"><!--top-->
+          <div class="logo"><img src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/logo.jpg" width="172" alt="褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华"></div>
+          <div class="topnav">
+                <ul>
+                  <li><a href="http://www.hexagonchina.com.cn/" target="_blank">娴峰厠鏂悍涓浗</a>|<a onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)">鍔犲叆鏀惰棌</a></li>
+                  <li><a onclick="SetHome(window.location)" href="javascript:void(0)">璁句负棣栭〉</a></li>
+                  <li class="clbg"><a href="http://sevenocean.cn/en/" class="one">English</a></li>
+                </ul>
+                <img src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/rx.gif" alt="褰卞儚娴嬮噺浠�,浜屾鍏冨奖鍍忎华,涓冩捣褰卞儚娴嬮噺浠�">
+          </div>
+    </div>
+	<!--top-->
+    <div class="blank20"></div>
+    </div>
+	<!--head-->
+<script type="text/javascript" language="javascript">
+
+    //鍔犲叆鏀惰棌
+
+        function AddFavorite(sURL, sTitle) {
+
+            sURL = encodeURI(sURL);
+        try{
+
+            window.external.addFavorite(sURL, sTitle);
+
+        }catch(e) {
+
+            try{
+
+                window.sidebar.addPanel(sTitle, sURL, "");
+
+            }catch (e) {
+
+                alert("鍔犲叆鏀惰棌澶辫触锛岃浣跨敤Ctrl+D杩涜娣诲姞,鎴栨墜鍔ㄥ湪娴忚鍣ㄩ噷杩涜璁剧疆.");
+
+            }
+
+        }
+
+    }
+
+    //璁句负棣栭〉
+
+    function SetHome(url){
+
+        if (document.all) {
+
+            document.body.style.behavior='url(#default#homepage)';
+
+               document.body.setHomePage(url);
+
+        }else{
+
+            alert("鎮ㄥソ,鎮ㄧ殑娴忚鍣ㄤ笉鏀寔鑷姩璁剧疆椤甸潰涓洪椤靛姛鑳�,璇锋偍鎵嬪姩鍦ㄦ祻瑙堝櫒閲岃缃椤甸潰涓洪椤�!");
+
+        }
+
+    }
+
+</script>
+
+   <!--涓诲鑸唬鐮佸紑濮�-->
+    <div id="menu_bg">
+      <div class="imenu_bg">
+      	  <div class="imenu" topnav="nav5"><a href="http://sevenocean.cn/">缃戠珯棣栭〉</a></div>
+          <div class="imenu" topnav="navgywm" attr="gywm"><a href="http://sevenocean.cn/html/000032.html">鍏充簬鎴戜滑</a>
+              <div class="submnu">
+                  <div id="gywm">
+                      <ul class="clearfix img-title">
+                                                                     <li><a href="http://sevenocean.cn/html/000032.html"><img alt="鍏徃绠�浠�" src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/91f93d52cbeb70b712648ce1754da2bf.jpg"><strong title="鍏徃绠�浠�">鍏徃绠�浠�</strong></a></li>
+                                                                      <li><a href="http://sevenocean.cn/html/000033.html"><img alt="鑱旂郴鎴戜滑" src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/ff8862177538248ce1d8424a69d9652f.jpg"><strong title="鑱旂郴鎴戜滑">鑱旂郴鎴戜滑</strong></a></li>
+                                                                      <li><a href="http://sevenocean.cn/html/00005.html"><img alt="浼佷笟鑽ｈ獕" src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/80a3179fc2558d720a07a9ee40bb8dac.jpg"><strong title="浼佷笟鑽ｈ獕">浼佷笟鑽ｈ獕</strong></a></li>
+                                                                      <li><a href="http://sevenocean.cn/html/00007.html"><img alt="浼佷笟鏂囧寲" src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/82cddbaef9a720893977da9589a59bc1.jpg"><strong title="浼佷笟鏂囧寲">浼佷笟鏂囧寲</strong></a></li>
+                                                                      <li><a href="http://sevenocean.cn/html/00009.html"><img alt="瑙嗛瀹ｄ紶" src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/6bdb42587168fa37e4b93164614b9603.jpg"><strong title="瑙嗛瀹ｄ紶">瑙嗛瀹ｄ紶</strong></a></li>
+                                                                      <li><a href="http://sevenocean.cn/html/00008.html"><img alt="涓冩捣灞曞巺" src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/a596b32ac3ca9f124a0db32a20679a4c.jpg"><strong title="涓冩捣灞曞巺">涓冩捣灞曞巺</strong></a></li>
+                                                                      <li><a href="http://sevenocean.cn/html/000010.html"><img alt="浜烘墠鎴樼暐" src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/d1b074135a823aa6d174497c6ac3d2d5.jpg"><strong title="浜烘墠鎴樼暐">浜烘墠鎴樼暐</strong></a></li>
+
+                                <li><a href="http://sevenocean.cn/vip/job"><img alt="浜烘墠鎷涜仒" src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/2a71cdcfbb82bfe817586894d8815a43.jpg"><strong title="浜烘墠鎷涜仒">浜烘墠鎷涜仒 </strong></a></li>
+                      </ul>
+                  </div>
+              </div>
+         </div>
+
+          <div class="imenu" topnav="navzx" attr="zx"><a href="http://sevenocean.cn/news/">鏂伴椈涓績</a>
+            <div class="submnu">
+              <div id="zx">
+                	<ul class="clearfix img-title">
+                                                                     <li><h2><a href="http://sevenocean.cn/news/dynamic/">鍏徃鍔ㄦ��</a></h2><a href="http://sevenocean.cn/news/dynamic/"><img alt="淇冭繘琛屼笟鍙戝睍锛屾鍏ユ櫤鎱т箣璺�----娴峰厠鏂悍鎬昏璁胯皥瀹炲綍" src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/4de4c87ccccc1c1ac927e3250d293326.jpg"></a><a href="http://sevenocean.cn/html/0000189.html"><strong title="淇冭繘琛屼笟鍙戝睍锛屾鍏ユ櫤鎱т箣璺�----娴峰厠鏂悍鎬昏璁胯皥瀹炲綍">淇冭繘琛屼笟鍙戝睍锛屾鍏ユ櫤鎱т箣璺�----娴峰厠鏂悍鎬昏璁胯皥瀹炲綍</strong></a></li>
+                                                                                                     <li><h2><a href="http://sevenocean.cn/news/industry/">琛屼笟鏂伴椈</a></h2><a href="http://sevenocean.cn/news/industry/"><img alt="2014 PC娌﹂櫡锛屽钩鏉跨數鑴戙�佹櫤鑳芥墜鏈哄皢涓诲甯傚満" src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/2eeae4e4359f1aced672982b945bcfb9.jpg"></a><a href="http://sevenocean.cn/html/0000151.html"><strong title="2014 PC娌﹂櫡锛屽钩鏉跨數鑴戙�佹櫤鑳芥墜鏈哄皢涓诲甯傚満">2014 PC娌﹂櫡锛屽钩鏉跨數鑴戙�佹櫤鑳芥墜鏈哄皢涓诲甯傚満</strong></a></li>
+                                                                                                     <li><h2><a href="http://sevenocean.cn/news/media/">濯掍綋鎶ラ亾</a></h2><a href="http://sevenocean.cn/news/media/"><img alt="涓冩捣娴嬮噺鎴愪负钃濇�濈鎶�浼樼渚涘簲鍟�" src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/6eaae03f088a9269404387b98e2db07e.jpg"></a><a href="http://sevenocean.cn/html/000075.html"><strong title="涓冩捣娴嬮噺鎴愪负钃濇�濈鎶�浼樼渚涘簲鍟�">涓冩捣娴嬮噺鎴愪负钃濇�濈鎶�浼樼渚涘簲鍟�</strong></a></li>
+                                                     </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="imenu" topnav="navpf" attr="pf"><a href="http://sevenocean.cn/product/">浜у搧灞曠ず</a>
+            <div class="submnu">
+              <div id="pf">
+             		<ul class="imgtext-h-block clearfix">
+                                                          <li>
+                                 <a href="http://sevenocean.cn/product/automatic" class="img-left"><img src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/a435c2c3512090b482415f3ec52a872a.jpg" alt="鑷姩褰卞儚娴嬮噺浠�"></a>
+                                 <div class="text-right">
+                                 <h3 class="short-title"><a href="http://sevenocean.cn/product/automatic">鑷姩褰卞儚娴嬮噺浠�</a></h3>
+                                <span> 鍏锋湁瓒呴珮绮惧害銆侀珮鏁堢巼銆侀珮绋冲畾鎬с�佹渶楂樻�т环姣斻�傝兘瀹炵幇瀵瑰伐浠剁殑鑷姩娴嬮噺...</span>
+                                 </div>
+                             </li>
+                                                         <li>
+                                 <a href="http://sevenocean.cn/product/manual" class="img-left"><img src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/894ebea1414fb27afbc1f1f08dc27de3.jpg" alt="鎵嬪姩褰卞儚娴嬮噺浠�"></a>
+                                 <div class="text-right">
+                                 <h3 class="short-title"><a href="http://sevenocean.cn/product/manual">鎵嬪姩褰卞儚娴嬮噺浠�</a></h3>
+                                <span> 鍏锋湁鏋侀珮鐨勭ǔ瀹氭�э紝浣跨敤鏂逛究锛屾搷浣滅畝鍗曘�傛惌閰嶆湁涓氱晫棰嗗厛鐨勫奖鍍忔祴閲忎华杞欢...</span>
+                                 </div>
+                             </li>
+                                                         <li>
+                                 <a href="http://sevenocean.cn/product/professional" class="img-left"><img src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/9c788dd439a842ac9dbfc1d3a02d5742.jpg" alt="涓撶敤褰卞儚娴嬮噺浠�"></a>
+                                 <div class="text-right">
+                                 <h3 class="short-title"><a href="http://sevenocean.cn/product/professional">涓撶敤褰卞儚娴嬮噺浠�</a></h3>
+                                <span> 涓撶敤鏈哄瀷锛屽疄鐜版祴閲忎釜鎬у寲瀹氬埗銆備负鐗规畩娴嬮噺闇�姹傛彁渚涚殑鍏ㄩ潰鐨勫畾鍒惰В鍐虫柟妗�...</span>
+                                 </div>
+                             </li>
+                                                         <li>
+                                 <a href="http://sevenocean.cn/product/largetravel" class="img-left"><img src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/310b5daf9f5329a52bf470dd8dda538a.jpg" alt="澶ц绋嬪奖鍍忔祴閲忎华"></a>
+                                 <div class="text-right">
+                                 <h3 class="short-title"><a href="http://sevenocean.cn/product/largetravel">澶ц绋嬪奖鍍忔祴閲忎华</a></h3>
+                                <span> 榫欓棬寮忓奖鍍忔祴閲忎华锛屽叿鏈夐珮绮惧害銆侀珮绋冲畾鎬э紝楂樻晥婊¤冻杈冨ぇ宸ヤ欢灏哄娴嬮噺闇�姹�...</span>
+                                 </div>
+                             </li>
+
+                    </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="imenu" topnav="navhyyy" attr="hyyy"><a href="http://sevenocean.cn/application/">琛屼笟搴旂敤</a>
+            <div class="submnu">
+              <div id="hyyy">
+                	<ul class="clearfix img-title">
+                                                      <li><h2><a href="http://sevenocean.cn/application/solution">瑙ｅ喅鏂规</a></h2><a href="http://sevenocean.cn/application/solution">
+                            <img alt="瑙ｅ喅鏂规" src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/89a4d2dc4014dba3cda0d56fd71d709e.jpg">
+                            <p title="瑙ｅ喅鏂规"> 渚濋潬涓冩捣娴嬮噺寮哄ぇ鐨勭爺鍙戝疄鍔涳紝鏍规嵁瀹㈡埛鐗规畩鐨勬祴閲忚...</p>
+                          </a></li>
+                                                         <li><h2><a href="http://sevenocean.cn/application/video">瑙嗛灞曠ず</a></h2><a href="http://sevenocean.cn/application/video">
+                            <img alt="瑙嗛灞曠ず" src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/c41f5dab14127797fd4736b8973018d4.jpg">
+                            <p title="瑙嗛灞曠ず"> 涓冩捣娴嬮噺鎷ユ湁闃靛寮哄ぇ鐨勭爺鍙戝洟闃燂紝涓撴敞鑷村姏浜庡厜瀛﹀奖...</p>
+                          </a></li>
+                                                         <li><h2><a href="http://sevenocean.cn/application/appcase">搴旂敤妗堜緥</a></h2><a href="http://sevenocean.cn/application/appcase">
+                            <img alt="搴旂敤妗堜緥" src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/b7c650bc0714446cf49f60ad2f8ea5b8.jpg">
+                            <p title="搴旂敤妗堜緥"> 涓冩捣娴嬮噺鎻愪緵鏈�閫傚悎鐨勬祴閲忕郴缁熺浉鍏宠祫璁紝涓哄鎴风殑鐤�...</p>
+                          </a></li>
+
+                      </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="imenu" topnav="navyszx" attr="yszx"><a href="http://sevenocean.cn/demonstration/">婕旂ず涓績</a>
+            <div class="submnu">
+              <div id="yszx" class="rate-border">
+               		<ul class="clearfix img-title">
+
+                          <!--li><a href="/demonstration/headoffice/">
+                            <img alt="娣卞湷鎬婚儴" src="/d/file/201401/small7f5251feb3c8c14b31179550148d4b66.jpg" width="132px" height="72px">
+                            <strong title="娣卞湷鎬婚儴">娣卞湷鎬婚儴</strong> </a></li-->
+                                                                   <li><a href="http://sevenocean.cn/html/000025.html"><img alt="娣卞湷" src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/5769ecc3490cf288d93736ebee246d9c.jpg" width="132px" height="72px"><strong title="娣卞湷">娣卞湷</strong></a></li>
+
+
+                                                               <li><a href="http://sevenocean.cn/html/000046.html"><img alt="鍗椾含" src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/dab1cf1bc2ec0193e446077d00cc7a61.jpg" width="132px" height="72px"><strong title="鍗椾含">鍗椾含</strong></a></li>
+                                                               <li><a href="http://sevenocean.cn/html/000045.html"><img alt="鎴愰兘" src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/bb41491fbd0a28a7d337569a651ef294.jpg" width="132px" height="72px"><strong title="鎴愰兘">鎴愰兘</strong></a></li>
+                                                               <li><a href="http://sevenocean.cn/html/000024.html"><img alt="鑻忓窞" src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/59c8cdb77e6ba872fab42c1d7b0f3dbe.jpg" width="132px" height="72px"><strong title="鑻忓窞">鑻忓窞</strong></a></li>
+                                                               <li><a href="http://sevenocean.cn/html/000017.html"><img alt="涓婃捣" src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/51fdd8139dd3bad9febac6e5e7f8e988.jpg" width="132px" height="72px"><strong title="涓婃捣">涓婃捣</strong></a></li>
+                                                               <li><a href="http://sevenocean.cn/html/000042.html"><img alt="鍙版咕" src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/27a92e38242f8d4838c7a8714eba1fc1.jpg" width="132px" height="72px"><strong title="鍙版咕">鍙版咕</strong></a></li>
+                                                               <li><a href="http://sevenocean.cn/html/0000156.html"><img alt="闊╁浗" src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/c33b10165f2688361d2a125cc29d15d5.jpg" width="132px" height="72px"><strong title="闊╁浗">闊╁浗</strong></a></li>
+
+                      </ul>
+              </div>
+            </div>
+          </div>
+
+           <div class="imenu" topnav="navfw" attr="fw"><a href="http://sevenocean.cn/service/">鏈嶅姟鏀寔</a>
+            <div class="submnu submnu_r">
+              <div id="fw" class="rate-border">
+                	<ul class="clearfix img-title">
+                                                         <li><h2><a href="http://sevenocean.cn/service/online">澧炲�兼湇鍔�</a></h2><a href="http://sevenocean.cn/service/online">
+                            <img alt="澧炲�兼湇鍔�" src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/5c24d05ee2920a5dc278078874525e5a.jpg">
+                            <p title="澧炲�兼湇鍔�"> 鎻愪緵姘镐箙绾夸笂鎶�鏈挩璇㈡湇鍔★紝鍏卞悓閽堝澶氬彉銆佺壒娈婄殑娴�...</p>
+                          </a></li>
+                                                         <li><h2><a href="http://sevenocean.cn/service/technology">鎶�鏈煡璇�</a></h2><a href="http://sevenocean.cn/service/technology">
+                            <img alt="鎶�鏈煡璇�" src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/0cc775cb26adfe650e68f55eb3c7d91c.jpg">
+                            <p title="鎶�鏈煡璇�"> 涓冩捣娴嬮噺浜у搧涓椤瑰姛鑳芥嫢鏈変笘鐣屽鍥戒笓鍒╋紱涓栫晫棣栧垱...</p>
+                          </a></li>
+
+                      </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="imenu" topnav="navbbs"><a href="http://sevenocean.cn/bbs/" target="_blank">涓冩捣璁哄潧</a></div>
+
+          <div class="imenu clbg" topnav="navcontact"><a href="http://sevenocean.cn/html/000033.html">鑱旂郴鎴戜滑</a></div>
+
+       </div>
+    </div>
+    <!--涓诲鑸唬鐮佺粨鏉�-->
+<div class="banertop"></div><!--baner-->
+<div class="baner">
+     <!--flash begin-->
+      <div id="flash">
+
+          <a name="#e15517" style="display:block;background:url(&#39;/d/file/201604/e04a7544a0b225b0275943ba1cad934b.jpg&#39;) no-repeat center top;" id="flash1" target="_blank" href="http://sevenocean.cn/html/000032.html" title="鍏ㄨ嚜鍔ㄥ奖鍍忔祴閲忎华,鍏夊褰卞儚娴嬮噺浠�"></a>
+
+          <a name="#e15517" style="display:block;background:url(&#39;/d/file/201604/304c41a0115d95d2f638b2e67492eda4.jpg&#39;) no-repeat center top;" id="flash2" target="_blank" href="http://sevenocean.cn/product/" title="涓冩捣褰卞儚娴嬮噺浠�,鍏夊娴嬮噺棰嗚窇鑰�"></a>
+
+          <a name="#e15517" style="display:block;background:url(&#39;/d/file/201604/01a4d0d7c4325581f54c67a9f946e006.jpg&#39;) no-repeat center top;" id="flash3" target="_blank" href="http://sevenocean.cn/html/000033.html" title="涓冩捣娴嬮噺,闈炴帴瑙﹂珮绮炬祴閲忎华鍣�"></a>
+                </div>
+      <!--flash end-->
+       <div class="flash_bar">
+          <div class="dq" id="f1" onclick="changeflash(1)"></div>
+          <div class="no" id="f2" onclick="changeflash(2)"></div>
+          <div class="no" id="f3" onclick="changeflash(3)"></div>
+        </div>
+</div>
+<div class="banerft"></div><!--baner-->
+
+<div class="main"><!--main-->
+<div class="news"><!--news-->
+      <div id="newstabs" class="tabswrap">
+       <ul id="tabsList" class="tabs">
+           <li>鍏徃鍔ㄦ��</li>
+           <li>琛屼笟鍔ㄦ��</li>
+           <li>璁哄潧绮惧崕</li>
+       </ul>
+       <div id="wraper" class="tabsWraper">
+           <div class="tabsCon" id="tabsCon">
+                <div class="item">
+                  <div class="newcon"><a href="http://sevenocean.cn/html/0000368.html"><img src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/fa805c3dd110161229ed0c3a1bc12b40.jpg" width="296" alt="娴峰厠鏂悍鍒堕�犳櫤鑳借繋鎺?7骞村叏鐞冪敤鎴峰ぇ浼�"></a></div>
+                  <div class="newcon">
+                        <ul>
+                                                     <li><a href="http://sevenocean.cn/html/0000384.html">2017娴峰厠鏂悍鍏ㄧ悆鐢ㄦ埛澶т細锛氬埗閫犳櫤鑳藉垎浼氬満灞曠ず鏃�</a></li>
+                                                     <li><a href="http://sevenocean.cn/html/0000379.html">2017娴峰厠鏂悍鍏ㄧ悆鐢ㄦ埛澶т細鍦ㄦ媺鏂淮鍔犳柉鎷夊紑甯峰箷</a></li>
+                                                </ul>
+                  </div>
+              </div>
+              <div class="item">
+                  <div class="newcon"><a href="http://sevenocean.cn/html/0000389.html"><img src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/556a212a8e8fd1c6903706702957acd0.jpg" width="296" alt="10.5浠FT-LCD 鐢熶骇绾垮叏闈㈠姩宸ワ紝杩庢帴8K鏂版椂浠�"></a></div>
+                  <div class="newcon">
+                        <ul>
+                                                     <li><a href="http://sevenocean.cn/html/0000389.html">10.5浠FT-LCD 鐢熶骇绾垮叏闈㈠姩宸ワ紝杩庢帴8K鏂版椂浠�</a></li>
+                                                     <li><a href="http://sevenocean.cn/html/0000387.html">涓冩捣骞抽潰搴︽祴閲忎华瀵瑰厜浼忕幓鐠冪殑璐＄尞</a></li>
+                                                </ul>
+                  </div>
+              </div>
+              <div class="item">
+              <div class="newcon"><a href="http://sevenocean.cn/bbs/"><img src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/bbs_1.jpg" width="296" alt="涓冩捣褰卞儚娴嬮噺浠鍧�,涓撲笟褰卞儚娴嬮噺浠璁哄尯"></a></div>
+                  <div class="newcon">
+                        <ul>
+ <li><a href="http://sevenocean.cn/bbs/forum.php?mod=viewthread&amp;tid=79" target="_blank">褰卞儚娴嬮噺浠拰鎵嬫満琛屼笟鐨勫彂灞�</a> </li>
+ <li><a href="http://sevenocean.cn/bbs/forum.php?mod=viewthread&amp;tid=46" target="_blank">濡備綍閫夌敤鍚堥�傜殑鎺㈤拡</a> </li>
+                        </ul>
+                  </div>
+              </div>
+
+
+           </div>
+       </div>
+   </div>
+</div><!--news-->
+<div class="pro"><!--pro-->
+       <div style="width:100%;height:19px;clear:both;"></div>
+	<div id="protabs" class="tabswrap">
+       <ul id="tabsList" class="tabs">
+           <li>鎵嬪姩褰卞儚娴嬮噺浠�</li>
+           <li>鑷姩褰卞儚娴嬮噺浠�</li>
+           <li>涓撶敤褰卞儚娴嬮噺浠�</li>
+           <li>澶ц绋嬪奖鍍忔祴閲忎华</li>
+       </ul>
+       <div id="wraper" class="tabsWraper">
+           <div class="tabsCon" id="tabsCon">
+               <div class="item">
+                                         <div class="fimg" style="width:188px;"><img src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/a08046a05669260d8e87249c93250048.jpg" height="136" alt="鎵嬪姩褰卞儚娴嬮噺浠�,缁忔祹鍨嬪奖鍍忎华"></div>
+                      <div class="pcon"><h1><a href="http://sevenocean.cn/html/000067.html">Eagle涓撲笟鍨嬫墜鍔ㄦ満</a></h1><a href="http://sevenocean.cn/html/000067.html">寮曡繘Hexagon闆嗗洟鍏堣繘鐨勫奖鍍忔妧鏈拰鍒堕�犲伐鑹猴紝涓撻棬闈㈠鍥藉唴鐢ㄦ埛閲忚韩搴﹀仛鐨勯珮鎬ц兘涓撲笟鍨嬫墜鍔ㄥ奖鍍忔祴閲忎华锛屽己澶х殑鎵╁睍鍔熻兘锛岀編瑙傚ぇ鏂圭殑澶栬锛屽僵鑹睠CD, 涓氱晫棰嗗厛鐨凟F绯诲垪娴嬮噺杞欢锛屽箍娉涘簲鐢ㄤ簬鏈烘锛岀數瀛愶紝鎵嬫満锛屾ā鍏峰強绮惧瘑浜旈噾绛夎涓氱殑妫�娴嬪拰璁捐寮�鍙戝簲鐢ㄣ��
+</a><br>
+                      <a class="fr" href="http://sevenocean.cn/html/000067.html">璇︽儏&gt;&gt;</a></div>
+                                  </div>
+               <div class="item">
+                                         <div class="fimg" style="width:188px;"><img src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/e57da0375848418672a783f79075245c.jpg" height="136" alt="楂樼簿搴﹀奖鍍忔祴閲忎华,鑷姩浜屾鍏冨奖鍍忎华"></div>
+                      <div class="pcon"><h1><a href="http://sevenocean.cn/html/000068.html">Accura IA 褰卞儚娴嬮噺浠�</a></h1><a href="http://sevenocean.cn/html/000068.html">Accura IA 鏄竷娴锋祴閲忔帹鍑虹殑涓撲负绠�渚垮簲鐢ㄥ瀷鐨勫鎴风殑缁忔祹鍨嬭嚜鍔ㄥ奖鍍忔祴閲忎华锛屽彲瀹炵幇XYZ涓夎酱CNC鍏ㄨ嚜鍔ㄦ祴閲忥紝閫氳繃榧犳爣鍙疄鐜板悇绉嶅嚑浣曟祴閲忥紝CNC缂栫▼锛孲PC鎶ヨ〃鍔熻兘绛夛紝鏄竴娆鹃珮鎬т环姣旂殑鑷姩浠櫒銆�</a><br>
+                      <a class="fr" href="http://sevenocean.cn/html/000068.html">璇︽儏&gt;&gt;</a></div>
+                                  </div>
+               <div class="item">
+                                         <div class="fimg" style="width:188px;"><img src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/96ef80b74ee63918ba0bb68dbe9e831d.jpg" height="136" alt="涓撶敤褰卞儚娴嬮噺浠�,涓烘偍閲忚韩瀹氬仛"></div>
+                      <div class="pcon"><h1><a href="http://sevenocean.cn/html/000069.html">涓�閿紡娴嬮噺浠�</a></h1><a href="http://sevenocean.cn/html/000069.html">涓�閿紡娴嬮噺鏈轰负楂樺�嶇巼杩滆姱鍏夎矾鎶�鏈拰瓒呭己杞欢鍔熻兘鐨勫簲鐢紝淇濊瘉浜嗗ぇ瑙嗛噹锛屼竴閿紡娴嬮噺锛涢珮绮惧害锛屽揩閫燂紝涓嶉』娌诲叿锛涗换鎰忔憜鏀剧殕鍙祴閲忋��
+</a><br>
+                      <a class="fr" href="http://sevenocean.cn/html/000069.html">璇︽儏&gt;&gt;</a></div>
+                                  </div>
+               <div class="item">
+                                         <div class="fimg" style="width:188px;"><img src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/573b5d98af8b59be26df4dc3b2ce230b.jpg" height="136" alt="鍏ㄨ嚜鍔ㄥ奖鍍忔祴閲忎华,澶ц绋嬪奖鍍忔祴閲忎华"></div>
+                      <div class="pcon"><h1><a href="http://sevenocean.cn/html/000012.html">Accura 8澶ц绋嬪奖鍍忔祴閲忎华</a></h1><a href="http://sevenocean.cn/html/000012.html">Accura 8绯诲垪鏄竷娴锋祴閲忓紩杩涙捣鍏嬫柉搴峰厛杩涚殑鑷姩褰卞儚鎶�鏈�, 鎺ㄥ嚭鐨勯珮閫燂紝楂樼簿搴︼紝鍔熻兘寮哄ぇ鐨勪笓涓氱骇鑷姩褰卞儚娴嬮噺浠紝鏄竴娆惧浗鍐呰秴楂樼搴旂敤鐨勫叏鑷姩褰卞儚浠櫒銆�
+</a><br>
+                      <a class="fr" href="http://sevenocean.cn/html/000012.html">璇︽儏&gt;&gt;</a></div>
+                                  </div>
+           </div>
+       </div>
+   </div>
+</div><!--pro-->
+</div><!--main-->
+<div class="server"><!--server-->
+      <div class="scon"><!--scon-->
+            <div class="stop"><a href="http://sevenocean.cn/application/"><img src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/more.jpg" width="33" alt="涓冩捣褰卞儚娴嬮噺浠簲鐢ㄦ渚�"></a><span>搴旂敤妗堜緥</span></div>
+            <div class="simg"><a href="http://sevenocean.cn/application/"><img src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/ser1.jpg" width="212" alt="褰卞儚娴嬮噺浠簲鐢ㄦ渚�,浜屾鍏冩祴閲忚В鍐虫柟妗�"></a></div>
+                                        <p><a href="http://sevenocean.cn/html/000015.html">ITO銆佸鐢电矑瀛愭瑙嗘渚�</a></p>
+                              </div><!--scon-->
+       <div class="scon"><!--scon-->
+            <div class="stop"><a href="http://sevenocean.cn/service/"><img src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/more.jpg" width="33" alt="褰卞儚娴嬮噺浠湇鍔′笌鏀寔"></a><span>鏈嶅姟鏀寔</span></div>
+            <div class="simg"><a href="http://sevenocean.cn/service/"><img src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/ser2.jpg" width="212" alt="涓冩捣娴嬮噺褰卞儚娴嬮噺浠珮璐ㄩ噺鐨勬湇鍔℃敮鎸�"></a></div>
+                                        <p><a href="http://sevenocean.cn/html/0000401.html">浜屾鍏冨奖鍍忔祴閲忎华鐨勬纭娇鐢ㄦ柟娉�</a></p>
+                              </div><!--scon-->
+       <div class="scon"><!--scon-->
+            <div class="stop"><a href="http://sevenocean.cn/html/00008.html"><img src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/more.jpg" width="33" alt="褰卞儚娴嬮噺浠笓涓氱敓浜у巶瀹�-涓冩捣娴嬮噺"></a><span>涓冩捣灞曞巺</span></div>
+            <div class="simg"><a href="http://sevenocean.cn/html/00008.html"><img src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/ser3.jpg" width="212" alt="涓冩捣褰卞儚娴嬮噺浠睍绀�,涓撲笟褰卞儚娴嬮噺浠睍鍘�"></a></div>
+
+                            <p><a href="http://sevenocean.cn/html/00008.html">涓冩捣娴嬮噺灞曞巺涓庡煿璁� </a></p>
+
+      </div><!--scon-->
+       <div class="scon"><!--scon-->
+            <div class="stop"><a href="http://sevenocean.cn/application/video/"><img src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/more.jpg" width="33" alt="褰卞儚娴嬮噺浠祴閲忚棰戜笌婕旂ず"></a><span>瑙嗛涓庢紨绀�</span></div>
+            <div class="simg"><a href="http://sevenocean.cn/application/video/"><img src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/ser4.jpg" width="212" alt="浜屾鍏冨奖鍍忔祴閲忎华,鍏ㄨ嚜鍔ㄥ奖鍍忔祴閲忎华"></a></div>
+                                        <p><a href="http://sevenocean.cn/html/000076.html">閽诲瓟鏉挎祴閲忚棰�</a></p>
+                              </div><!--scon-->
+</div><!--server-->
+<div class="blank20"></div>
+<div class="foot_1"><!--foot-->
+      <div class="footcon"><!--footcon-->
+          <div class="blank15"></div>
+          <div class="frlink">
+            <a href="http://sevenocean.cn/product/">浜у搧涓績</a>|
+            <a href="http://sevenocean.cn/html/000032.html">鍏徃绠�浠�</a>|
+            <a href="http://sevenocean.cn/vip/job/">浜烘墠鎷涜仒</a>|
+            <a href="http://sevenocean.cn/html/000033.html">鑱旂郴鎴戜滑</a>|
+            <a href="http://sevenocean.cn/sitemap.xml">缃戠珯鍦板浘</a>
+         </div>
+         <div class="blank10"></div>
+          <div class="frlink">
+            娣卞湷甯傚疂瀹夊尯绂忔案琛楅亾鍜屽钩绀惧尯鍜屾嘲宸ヤ笟鍖哄拰涓板伐涓氬洯绗?� 鎬绘満锛�+86-0755-33233111  浼犵湡锛?5-33233111 杞?0
+<br>鐗堟潈鎵�鏈� 漏 涓冩捣娴嬮噺鎶�鏈紙娣卞湷锛夋湁闄愬叕鍙� 绮CP澶?20534鍙�
+          </div>
+      </div><!--footcon-->
+
+<div style="display:none;">
+<script language="javascript" type="text/javascript" src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/16826510.js.涓嬭浇"></script><a href="https://www.51.la/?16826510" target="_blank" title="51.La 缃戠珯娴侀噺缁熻绯荤粺">缃戠珯缁熻</a>
+
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F72af2afd22405634c7013347c9c307ce' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/h.js.涓嬭浇" type="text/javascript"></script><a href="http://tongji.baidu.com/hm-web/welcome/ico?s=72af2afd22405634c7013347c9c307ce" target="_blank"><img border="0" src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/21.gif" width="20" height="20"></a>
+
+</div>
+      <div class="link">
+                <li><a href="http://www.hjunkel.com/" target="_blank">鑰佸寲璇曢獙绠� </a></li>
+                <li><a href="http://www.jan1718.com/" target="_blank">婵�鍏夋祴璺濅华 </a></li>
+                <li><a href="http://www.sevenocean.cn/" target="_blank">褰卞儚娴嬮噺浠� </a></li>
+                <li><a href="http://www.evenfit.com.cn/" target="_blank">瑙嗚妫�娴� </a></li>
+                <li><a href="http://www.mmlaser.net/" target="_blank">婵�鍏夊垏鍓叉満 </a></li>
+                <li><a href="http://www.vfe.cc/" target="_blank">鍙橀璁￠噺缃� </a></li>
+                <li><a href="http://shop.zhdgps.com/" target="_blank">鎵嬫寔GPS </a></li>
+                <li><a href="http://www.tooper.cn/" target="_blank">LED鏄剧ず灞� </a></li>
+                <li><a href="http://www.tg688.com/" target="_blank">绉伴噸浼犳劅鍣� </a></li>
+                <li><a href="http://www.lanhuxiaofang.com/" target="_blank">姘斾綋鐏伀 </a></li>
+                <li><a href="http://www.brl-china.com/" target="_blank">绀烘尝鍣� </a></li>
+                <li><a href="http://www.hexagonvision.com.cn/" target="_blank">娴峰厠鏂悍褰卞儚浜т笟鍗曞厓 </a></li>
+               </div>
+      <div class="blank20"></div>
+</div><!--foot-->
+<div class="footcon"><!--footcon-->
+         <div class="blank10"></div>
+          <div class="frlink">
+  <table width="990" border="0" align="center">
+  <tbody><tr>
+    <td width="198"><div align="left"><strong><a href="http://www.sevenocean.cn/html/000032.html" target="_blank">涓冩捣娴嬮噺</a></strong></div></td>
+    <td width="198"><div align="left"><strong><a href="http://www.sevenocean.cn/product/" target="_blank">浜у搧灞曠ず</a></strong></div></td>
+    <td width="198"><div align="left"><strong><a href="http://www.sevenocean.cn/news/" target="_blank">鏂伴椈涓績</a></strong></div></td>
+    <td width="198"><div align="left"><strong><a href="http://www.sevenocean.cn/application/" target="_blank">琛屼笟搴旂敤</a></strong></div></td>
+    <td width="198"><div align="left"><strong><a href="http://www.sevenocean.cn/service/" target="_blank">鏈嶅姟鏀寔</a></strong></div></td>
+  </tr>
+  <tr>
+    <td><div align="left"><a href="http://www.sevenocean.cn/html/000032.html" target="_blank">鍏徃绠�浠�</a></div></td>
+    <td><div align="left"><a href="http://www.sevenocean.cn/product/manual/" target="_blank">鎵嬪姩褰卞儚娴嬮噺浠�</a></div></td>
+    <td><div align="left"><a href="http://www.sevenocean.cn/news/dynamic/" target="_blank">鍏徃鍔ㄦ��</a></div></td>
+    <td><div align="left"><a href="http://www.sevenocean.cn/application/solution/" target="_blank">褰卞儚娴嬮噺浠В鍐虫柟妗�</a></div></td>
+    <td><div align="left"><a href="http://www.sevenocean.cn/service/online/" target="_blank">褰卞儚娴嬮噺浠鍊兼湇鍔�</a></div></td>
+  </tr>
+  <tr>
+    <td><div align="left"><a href="http://www.sevenocean.cn/html/00005.html" target="_blank">浼佷笟鑽ｈ獕</a></div></td>
+    <td><div align="left"><a href="http://www.sevenocean.cn/product/automatic/" target="_blank">鑷姩褰卞儚娴嬮噺浠�</a></div></td>
+    <td><div align="left"><a href="http://www.sevenocean.cn/news/industry/" target="_blank">琛屼笟鏂伴椈</a></div></td>
+    <td><div align="left"><a href="http://www.sevenocean.cn/application/video/" target="_blank">褰卞儚娴嬮噺浠棰戝睍绀�</a></div></td>
+    <td><div align="left"><a href="http://www.sevenocean.cn/service/technology/" target="_blank">褰卞儚娴嬮噺浠妧鏈煡璇�</a></div></td>
+  </tr>
+  <tr>
+    <td><div align="left"><a href="http://www.sevenocean.cn/html/00008.html" target="_blank">涓冩捣灞曞巺</a></div></td>
+    <td><div align="left"><a href="http://www.sevenocean.cn/product/professional/" target="_blank">涓撶敤褰卞儚娴嬮噺浠�</a></div></td>
+    <td><div align="left"><a href="http://www.sevenocean.cn/news/media/" target="_blank">濯掍綋鎶ラ亾</a></div></td>
+    <td><div align="left"><a href="http://www.sevenocean.cn/application/appcase/" target="_blank">褰卞儚娴嬮噺浠簲鐢ㄦ渚�</a></div></td>
+    <td><div align="left"></div></td>
+  </tr>
+  <tr>
+    <td><div align="left"><a href="http://www.sevenocean.cn/vip/job/" target="_blank">浜烘墠鎷涜仒</a></div></td>
+    <td><div align="left"><a href="http://www.sevenocean.cn/html/000012.html" target="_blank">澶ц绋嬪奖鍍忔祴閲忎华</a></div></td>
+    <td><div align="left"></div></td>
+    <td><div align="left"></div></td>
+    <td><div align="left"></div></td>
+  </tr>
+  <tr>
+    <td><div align="left"><a href="http://www.sevenocean.cn/html/000033.html" target="_blank">鑱旂郴鎴戜滑</a></div></td>
+    <td><div align="left"><a href="http://www.sevenocean.cn/demonstration/" target="_blank">褰卞儚娴嬮噺浠紨绀轰腑蹇�</a></div></td>
+    <td><div align="left"></div></td>
+    <td><div align="left"></div></td>
+    <td><div align="left"></div></td>
+  </tr>
+</tbody></table></div>
+<script id="ebsgovicon" src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/govicon.js.涓嬭浇" type="text/javascript" charset="utf-8"></script><a href="http://szcert.ebs.org.cn/91869aec-2a3b-4872-a3fb-5c97da8d9c34" target="_blank"><img src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/govIcon.gif" title="娣卞湷甯傚競鍦虹洃鐫ｇ鐞嗗眬浼佷笟涓讳綋韬唤鍏ず" alt="娣卞湷甯傚競鍦虹洃鐫ｇ鐞嗗眬浼佷笟涓讳綋韬唤鍏ず" width="36" height="50" border="0" style="border-width:0px;border:hidden; border:none;"></a><script type="text/javascript" src="./褰卞儚娴嬮噺浠�,褰卞儚浠�,浜屾鍏冩祴閲忎华 - 涓冩捣褰卞儚娴嬮噺浠櫒瀹樼綉_files/iplookup.php"></script>
+</div>
+</body>
