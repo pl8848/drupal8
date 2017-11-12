@@ -1,0 +1,3 @@
+<div id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url({{base_path}}themes/test/images/img_bg_2.jpg);" data-stellar-background-ratio="0.5"> 
+{{ header }}
+</div>
