@@ -1,0 +1,46 @@
+global-styling:
+    version: VERSION
+    css:
+      theme:
+        css/css.css: {}
+        css/css0.css: {}
+        css/animate.css: {}
+        css/icomoon.css: {}
+        css/bootstrap.css: {}
+        css/magnific-popup.css: {}
+        css/owl.carousel.min.css: {}  
+        css/owl.theme.default.min.css: {}
+        css/style.css: {} 
+        css/style.scss: {}
+    js:  
+        js/modernizr-2.6.2.min.js: {}
+        js/respond.min.js: {}
+        js/jQuery-jcTabs.js: {}
+        js/jquery.min.js: {}
+        js/query.easing.1.3.js: {}
+        js/bootstrap.min.js: {}
+        js/jquery.waypoints.min.js: {}
+        js/owl.carousel.min.js: {}
+        js/jquery.countTo.js: {}
+        js/jquery.stellar.min.js: {}
+        js/jquery.magnific-popup.min.js: {}
+        js/magnific-popup-options.js: {}
+        js/simplyCountdown.js: {}
+        js/main.js: {}          
+        # js/16826510.js: {}   
+        # js/b.js: {}    
+        # js/navslide.js: {}      
+        # js/jquery.min.js: {}    
+        # js/google_map.js: {}       
+        # js/respond.min.js: {}
+        # js/govicon.js: {}  
+        # js/h.js: {}
+        # js/ lxb.js: {}
+        # js/v.js: {}
+     
+        
+        
+        
+       
+        
+  
