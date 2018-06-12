@@ -1,4 +1,15 @@
-global-styling: 
-	version: VERSION
-	css: 
-		theme: 
+global-styling:
+  version: VERSION
+  css:
+    css/style.css: {}
+
+  js: 
+   js/b.js: {}
+   js/lxb.js: {}
+   js/v.js: {}
+   js/jquery.min.js: {}
+   js/navslide.js: {}
+   js/jQuery-jcTabs.js: {}
+   js/16826510.js: {}
+   js/h.js: {}
+   js/govicon.js: {}

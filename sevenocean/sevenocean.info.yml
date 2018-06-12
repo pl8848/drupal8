@@ -5,4 +5,18 @@ core: 8.x
 base theme: classy
 css: 
 regions: 
-	header: HEADER
+	header: HEADERname: sevenocean
+description: 'sevenocean官网'
+package: sevenocean
+base theme: steble
+
+libraries:
+  - sevenocean/global-styling
+
+#regions:
+ # head: 'Head'
+
+version: 'for drupal 8.x-3.6'
+core: '8.x'
+project: 'test'
+
